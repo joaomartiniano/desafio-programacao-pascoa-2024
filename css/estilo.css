@@ -1,0 +1,62 @@
+body {
+    font-family: "Noto Sans", sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal; font-variation-settings: "wdth" 100;
+}
+
+header {
+    margin: 0 auto; padding: 1em;
+    max-width: 768px;
+
+    & .logo-esab {
+        padding-bottom: 1em;
+    }
+}
+
+main {
+    padding: 0 1em 1em 1em; margin: 0 auto; max-width: 768px;
+}
+
+footer {
+    background-color: #fafafa; padding: 1em; text-align: center;
+
+    & .attribution {
+        margin-bottom: 1.5rem;
+
+        & .links {
+            padding-top: 0.7rem;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    color:darkslategrey
+}
+
+a {
+    text-decoration: none; color: #0d6efd;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+code {
+    color:#0065b3;
+}
+
+.grelha {
+    display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem 1rem; justify-content: space-around;
+}
+
+.dica {
+    margin-bottom: 2rem;
+
+    & .body {
+        padding: 1rem; background-color: blanchedalmond; display:none;
+    }
+}

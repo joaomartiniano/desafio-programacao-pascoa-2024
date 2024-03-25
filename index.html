@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desafio de Programação: Páscoa/2024</title>
+    <meta name="author" content="João Martiniano">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-esab">
+            <img src="img/logo-brotero.png" alt="Escola Secundária Avelar Brotero">
+        </div>
+        <h1>Desafio de Programação</h1>
+        <h2>Páscoa 2024</h2>
+        <div>
+            <img class="pure-img" src="img/animacao.gif" alt="[Demonstração do resultado final]">
+        </div>
+    </header>
+
+    <main>
+        <h2>Descrição</h2>
+
+        <p>Utilizando a linguagem C# escreva um programa para a consola, no qual é simulada uma bola em movimento.</p>
+
+        <h2>Movimentação</h2>
+
+        <p>
+            A bola pode assumir uma de quatro direções:
+            <div>
+                <img src="img/direcoes.png" alt="Direções possíveis que o movimento da bola pode assumir">
+            </div>
+        </p>
+        
+        <p>Quando a bola atinge os limites da consola, deverá fazer ricochete de acordo com as seguintes imagens:</p>
+
+        <div class="grelha">
+            <div><img src="img/m1.png" alt="Movimento na diagonal para cima e para a direita, e o resultado do ricochete"></div>
+            <div><img src="img/m2.png" alt="Movimento na diagonal para cima e para a esquerda, e o resultado do ricochete"></div>
+            <div><img src="img/m3.png" alt="Movimento na diagonal para baixo e para a direita, e o resultado do ricochete"></div>
+            <div><img src="img/m4.png" alt="Movimento na diagonal para baixo e para a esquerda, e o resultado do ricochete"></div>
+            <div><img src="img/m5.png" alt="Movimento na diagonal para cima e para a direita, e o resultado do ricochete"></div>
+            <div><img src="img/m6.png" alt="Movimento na diagonal para baixo e para a direita, e o resultado do ricochete"></div>
+            <div><img src="img/m7.png" alt="Movimento na diagonal para cima e para a esquerda, e o resultado do ricochete"></div>
+            <div><img src="img/m8.png" alt="Movimento na diagonal para baixo e para a esquerda, e o resultado do ricochete"></div>
+        </div>
+
+        <h2>Execução</h2>
+
+        <p>O programa deverá permanecer em execução até que o utilizador pressione alguma tecla.</p>
+
+        <h2>Bónus</h2>
+
+        <ul>
+            <li>Utilize uma <strong>struct</strong> ou uma <strong>classe</strong> para armazenar os dados da bola (coordenadas (x, y) e direção) e implemente um <strong>método para desenhar a bola</strong></li>
+            <li>Utilize uma enumeração para definir as 4 direções possíveis</li>
+        </ul>
+
+        <h2>Dicas</h2>
+        <p>
+            O objetivo desta atividade é fazer com que os alunos pensem por si próprios, tentando, através de um processo de tentativa e erro, conseguir atingir o resultado final.
+        </p>
+        <p>
+            No entanto, por vezes, é necessária alguma ajuda para iniciar o desenvolvimento ou resolver bloqueios.
+        </p>
+        <p>
+            Clique em cada botão para ver a dica respetiva.
+        </p>
+
+        <div class="dica">
+            <button id="botaoDica1" class="pure-button pure-button-primary">Mostrar a dica 1</button>
+            <div id="dica1" class="body">
+                Utilize o método <code>Console.SetCursorPosition()</code> para posicionar a bola numa determinada coordenada (x, y)
+            </div>
+        </div>
+
+        <div class="dica">
+            <button id="botaoDica2"  class="pure-button pure-button-primary">Mostrar a dica 2</button>
+            <div id="dica2" class="body">
+                Utilize o método <code>System.Threading.Thread.Sleep()</code> para efetuar uma pequena pausa e assim controlar a velocidade da bola
+            </div>
+        </div>
+
+        <div class="dica">
+            <button id="botaoDica3"  class="pure-button pure-button-primary">Mostrar a dica 3</button>
+            <div id="dica3" class="body">
+                Para testar os limites da janela da consola, utilize as propriedades <code>Console.WindowWidth</code> e <code>Console.WindowHeight</code>
+            </div>
+        </div>
+
+        <div class="dica">
+            <button id="botaoDica4"  class="pure-button pure-button-primary">Mostrar a dica 4</button>
+            <div id="dica4" class="body">
+                Para manter o programa em execução até que o utilizador pressione uma tecla, utilize a propriedade <code>Console.KeyAvailable</code>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="attribution">
+            por João Martiniano
+            <div class="links">
+                <a href="https://github.com/joaomartiniano"><img src="img/github-mark.png" alt="[Logotipo GitHub]"></a>&nbsp;&nbsp;
+                <a href="https://www.youtube.com/@jmartiniano"><img src="img/youtube.png" alt="[Logotipo YouTube]"></a>
+            </div>
+        </div>
+
+        <div class="attribution">
+            <a href="http://esab.pt/">Escola Secundária Avelar Brotero</a>
+            <div class="links">
+                <a href="https://github.com/escolabrotero"><img src="img/github-mark.png" alt="[Logotipo GitHub]"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("botaoDica1").addEventListener("click", () => {
+            document.getElementById("dica1").style.display = "block";
+        });
+
+        document.getElementById("botaoDica2").addEventListener("click", () => {
+            document.getElementById("dica2").style.display = "block";
+        });
+
+        document.getElementById("botaoDica3").addEventListener("click", () => {
+            document.getElementById("dica3").style.display = "block";
+        });
+
+        document.getElementById("botaoDica4").addEventListener("click", () => {
+            document.getElementById("dica4").style.display = "block";
+        });
+    </script>
+</body>
+</html>
